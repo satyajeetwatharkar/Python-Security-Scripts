@@ -1,0 +1,113 @@
+{
+  "collected_at": "2025-10-26T16:19:44.940599Z",
+  "platform": {
+    "system": "Windows",
+    "release": "11",
+    "version": "10.0.26200",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+    "python_version": "3.13.5"
+  },
+  "hostname": "Predator",
+  "current_user": "Satyajeet",
+  "cpu_count_logical": 28,
+  "network": [
+    {
+      "interface": "McAfee VPN",
+      "address": "169.254.194.117",
+      "netmask": "255.255.0.0",
+      "broadcast": null
+    },
+    {
+      "interface": "McAfee VPN",
+      "address": "fe80::219c:487c:86b3:d23d",
+      "netmask": null,
+      "broadcast": null
+    },
+    {
+      "interface": "Ethernet 2",
+      "address": "192.168.56.1",
+      "netmask": "255.255.255.0",
+      "broadcast": null
+    },
+    {
+      "interface": "Local Area Connection* 9",
+      "address": "169.254.171.187",
+      "netmask": "255.255.0.0",
+      "broadcast": null
+    },
+    {
+      "interface": "Local Area Connection* 10",
+      "address": "169.254.251.124",
+      "netmask": "255.255.0.0",
+      "broadcast": null
+    },
+    {
+      "interface": "VMware Network Adapter VMnet1",
+      "address": "192.168.92.1",
+      "netmask": "255.255.255.0",
+      "broadcast": null
+    },
+    {
+      "interface": "VMware Network Adapter VMnet1",
+      "address": "fe80::354a:aba1:192f:5aa5",
+      "netmask": null,
+      "broadcast": null
+    },
+    {
+      "interface": "VMware Network Adapter VMnet8",
+      "address": "192.168.29.1",
+      "netmask": "255.255.255.0",
+      "broadcast": null
+    },
+    {
+      "interface": "VMware Network Adapter VMnet8",
+      "address": "fe80::ff96:38c5:3333:4ad7",
+      "netmask": null,
+      "broadcast": null
+    },
+    {
+      "interface": "Wi-Fi 6",
+      "address": "192.168.100.19",
+      "netmask": "255.255.252.0",
+      "broadcast": null
+    },
+    {
+      "interface": "Ethernet",
+      "address": "169.254.201.149",
+      "netmask": "255.255.0.0",
+      "broadcast": null
+    },
+    {
+      "interface": "Local Area Connection",
+      "address": "169.254.191.232",
+      "netmask": "255.255.0.0",
+      "broadcast": null
+    },
+    {
+      "interface": "Local Area Connection",
+      "address": "fe80::13f7:39b2:1dc4:f7a4",
+      "netmask": null,
+      "broadcast": null
+    },
+    {
+      "interface": "Loopback Pseudo-Interface 1",
+      "address": "127.0.0.1",
+      "netmask": "255.0.0.0",
+      "broadcast": null
+    },
+    {
+      "interface": "Loopback Pseudo-Interface 1",
+      "address": "::1",
+      "netmask": null,
+      "broadcast": null
+    }
+  ],
+  "memory": {
+    "total": 16869548032,
+    "available": 4418740224,
+    "used": 12450807808,
+    "free": 4418740224,
+    "percent": 73.8
+  }
+}

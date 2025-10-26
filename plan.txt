@@ -1,0 +1,197 @@
+Week 1 — Python refresher & automation basics (Days 1–7)
+
+Goal: get fluent in Python syntax, file I/O, subprocesses, CLI args, and basic scripts you can explain in interviews.
+
+Day 1 — Python quickstart & repo setup
+
+Task: Initialize GitHub repo, create README.md, basic .gitignore.
+
+Deliverable: README with project goals; commit chore: repo init.
+
+Day 2 — Basic Python syntax mini
+
+Task: write hello_args.py that accepts CLI args and prints them. Use argparse.
+
+Deliverable: week1/day02_hello_args/hello_args.py + README snippet.
+
+Day 3 — System info collector
+
+Task: sysinfo.py — OS, hostname, IP(s), current user, CPU count, memory info (use platform, socket, psutil if available).
+
+Deliverable: push script, sample output file.
+
+Day 4 — File I/O + Log parser
+
+Task: log_parser.py — parse a sample auth log (provided in repo), count failed logins, export CSV.
+
+Deliverable: logs/sample_auth.log + parser + results.csv.
+
+Day 5 — Subprocess & shell automation
+
+Task: run_cmds.py — run a list of shell commands (ping, uname) using subprocess.run, capture stdout/stderr, write to a timestamped log.
+
+Deliverable: script + one sample run log.
+
+Day 6 — Exception handling & logging
+
+Task: Refactor any previous script to add Python logging and robust exception handling.
+
+Deliverable: updated script + small README note: “what I improved”.
+
+Day 7 — Weekly checkpoint + README
+
+Task: polish code + add Week 1 README summarizing learnings and commands to run scripts (examples).
+
+Deliverable: PR to merge dev → main (optional). Tag commit chore(week1): add docs.
+
+Week 2 — Networking & Recon basics (Days 8–14)
+
+Goal: sockets, basic scanners, DNS, banner grabbing.
+
+Day 8 — Intro to socket & simple TCP client
+
+Task: tcp_client.py — connect to host:port, send small payload, read response.
+
+Deliverable: script + README explaining timeouts and error handling.
+
+Day 9 — Ping sweeper (ICMP or TCP)
+
+Task: ping_sweeper.py — check a /24 subnet for live hosts (use subprocess with ping or TCP connect). Rate-limit to be polite.
+
+Deliverable: results file for your local subnet.
+
+Day 10 — Simple port scanner
+
+Task: port_scan.py — scan a host for a list of ports (top 100), output open ports. Use socket with timeouts and threadpool/concurrent.futures optional.
+
+Deliverable: script + sample output.
+
+Day 11 — Banner grabber
+
+Task: banner_grab.py — connect to open port, read banner or HTTP header. Save banners to JSON.
+
+Deliverable: script + sample JSON.
+
+Day 12 — DNS recon
+
+Task: dns_recon.py — perform A, MX, NS, TXT lookups using dnspython or socket.getaddrinfo.
+
+Deliverable: script & example output for example.com (or a lab domain).
+
+Day 13 — Intro to scapy (read-only)
+
+Task: install scapy locally; run a script that crafts a simple packet and prints the parsed result (do not send unless in lab).
+
+Deliverable: scapy_readme.md with notes + sample code.
+
+Day 14 — Weekly checkpoint & combine tools
+
+Task: write recon_runner.py that runs port scan + banner grab + DNS recon for a host and aggregates results to JSON.
+
+Deliverable: combined script + chore(week2): add recon runner.
+
+Week 3 — Web security automation & basic fuzzing (Days 15–21)
+
+Goal: automate common web tasks: requests, crawling, parameter fuzzing, IDOR checks.
+
+Day 15 — requests basics & session handling
+
+Task: http_get.py — GET/POST examples, show headers, cookies, sessions.
+
+Deliverable: script + README about session persistence.
+
+Day 16 — Simple web crawler
+
+Task: crawler.py — crawl a domain (respect robots.txt), extract links and parameters (use BeautifulSoup). Limit to same domain.
+
+Deliverable: URL list output.
+
+Day 17 — Directory brute-forcer (wordlist)
+
+Task: dirb.py — try common paths from a small wordlist; detect 200/301/403 responses. Rate-limit.
+
+Deliverable: script + sample results for a lab target.
+
+Day 18 — Parameter fuzzing basics
+
+Task: param_fuzz.py — for a URL with ?id=, change values from a list and compare response lengths or keywords to identify possible IDORs.
+
+Deliverable: script + note on safe targets.
+
+Day 19 — Login form automation (ethically)
+
+Task: login_test.py — demonstrate filling a login form with requests using a test account and handling CSRF tokens. Do not brute-force unauthorized accounts.
+
+Deliverable: code showing session + CSRF handling; sample safe target e.g., a local challenge.
+
+Day 20 — Basic SQLi/XSS detection heuristics (passive)
+
+Task: vuln_checker.py — send benign payloads (like ' OR '1'='1) to forms and look for indicative responses (error messages or differences). Stress again: only in-lab.
+
+Deliverable: script + README warnings.
+
+Day 21 — Weekly checkpoint: small web recon tool
+
+Task: combine crawler + param fuzz into web_recon.py that outputs candidate URLs with parameters to investigate manually.
+
+Deliverable: push + feat(week3): add web recon tool.
+
+Week 4 — Security automation, APIs, and polishing projects (Days 22–30)
+
+Goal: connect to security APIs, automate file/hash lookups, SSH automation, and produce resume-ready projects.
+
+Day 22 — Hashing & encoding utilities
+
+Task: hash_utils.py — compute MD5/SHA1/SHA256 of files, base64 encode/decode. Useful for VT checks.
+
+Deliverable: script + sample outputs.
+
+Day 23 — VirusTotal / API integration (read-only)
+
+Task: vt_lookup.py — given a hash, query VT API (or mock it) and save results. If you don’t have an API key, write a mock function and document how to add key. Use read-only lookups.
+
+Deliverable: script + README describing API usage and limits.
+
+Day 24 — Paramiko: SSH automation basics
+
+Task: ssh_exec.py — connect to a lab VM, run a command, retrieve output (use Paramiko). Emphasize credentials & lab usage.
+
+Deliverable: script + sample run in your lab.
+
+Day 25 — Threading/async for speed
+
+Task: refactor port scanner or directory brute to use concurrent.futures.ThreadPoolExecutor for speed. Explain tradeoffs.
+
+Deliverable: updated script + performance before/after note.
+
+Day 26 — Small security scanner (mini)
+
+Task: mini_scanner.py — orchestrates port scan, banner grab, simple vuln heuristics (from week3), and writes a human-readable report.
+
+Deliverable: script + JSON & pretty-printed report.
+
+Day 27 — Logging, CLI polish & packaging
+
+Task: add CLI help, logging levels (--verbose), and a sample requirements.txt. Create docs/usage.md.
+
+Deliverable: updated scripts + requirements.txt.
+
+Day 28 — Final project: README + demo
+
+Task: Choose your best 3 scripts, polish code (docstrings), add a combined README section “Top scripts” with usage examples and a short demo GIF or sample output.
+
+Deliverable: README polished + one demo output.
+
+Day 29 — Resume text + GitHub presentation
+
+Task: Create a short resume bullet for the projects, e.g.:
+• Built Python security tooling (port scanner, banner grabber, web recon, VT hash checker) — automated recon workflows; repo: github.com/<you>/python-security-scripts
+Add repo topics: python, security, recon, pentesting, automation.
+
+Deliverable: docs/resume_bullets.md.
+
+Day 30 — Final review, cleanup & showcase
+
+Task: run tests/sample runs, fix minor bugs, update license (MIT), add CONTRIBUTING.md (optional), tag a release v0.1. Create a short demo.md that you can link in your resume.
+
+Deliverable: final PR/merge & release v0.1 commit.
