@@ -1,0 +1,10 @@
+Oct 27 09:14:03 ubuntu sshd[1042]: Failed password for invalid user admin from 192.168.1.15 port 51432 ssh2
+Oct 27 09:14:07 ubuntu sshd[1042]: Failed password for invalid user test from 192.168.1.15 port 51438 ssh2
+Oct 27 09:14:09 ubuntu sshd[1042]: Accepted password for satyajeet from 10.0.0.4 port 42222 ssh2
+Oct 27 09:18:41 ubuntu sshd[1053]: Failed password for invalid user root from 203.0.113.45 port 55879 ssh2
+Oct 27 09:18:45 ubuntu sshd[1053]: Failed password for invalid user guest from 203.0.113.45 port 55883 ssh2
+Oct 27 09:21:01 ubuntu sshd[1072]: Failed password for satyajeet from 10.0.0.4 port 42245 ssh2
+Oct 27 09:22:14 ubuntu sshd[1081]: Failed password for invalid user admin from 192.168.1.15 port 51459 ssh2
+Oct 27 09:25:33 ubuntu sshd[1102]: Failed password for invalid user demo from 203.0.113.45 port 55901 ssh2
+Oct 27 09:27:05 ubuntu sshd[1108]: Failed password for invalid user root from 192.168.56.2 port 60122 ssh2
+Oct 27 09:29:17 ubuntu sshd[1113]: Accepted password for satyajeet from 10.0.0.4 port 42278 ssh2
