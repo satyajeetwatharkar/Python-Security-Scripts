@@ -1,0 +1,36 @@
+Command Run Log — 2025-10-28_12-46-53
+============================================================
+
+Command: ping google.com -n 2
+------------------------------------------------------------
+STDOUT:
+
+Pinging google.com [142.250.72.110] with 32 bytes of data:
+Reply from 142.250.72.110: bytes=32 time=33ms TTL=112
+Reply from 142.250.72.110: bytes=32 time=23ms TTL=112
+
+Ping statistics for 142.250.72.110:
+    Packets: Sent = 2, Received = 2, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 23ms, Maximum = 33ms, Average = 28ms
+
+STDERR:
+
+Return Code: 0
+============================================================
+
+Command: ver
+------------------------------------------------------------
+Error running command ['ver']: [WinError 2] The system cannot find the file specified
+============================================================
+
+Command: whoami
+------------------------------------------------------------
+STDOUT:
+predator\satyajeet
+
+STDERR:
+
+Return Code: 0
+============================================================
+
