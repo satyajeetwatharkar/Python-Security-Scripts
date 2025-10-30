@@ -1,0 +1,25 @@
+# Python Security Scripting — Week 1
+
+## Overview
+This week, I focused on learning Python scripting from scratch with a focus on security-related tasks.  
+Scripts cover CLI arguments, file exploration, system information collection, and logging.  
+The goal is to build a strong foundation for automating security tasks and showcasing scripts on GitHub.
+
+## Scripts
+
+| Day | Script | Purpose |
+|-----|--------|---------|
+| Day 1 | day1_quickstart.py | Repo initialization, Python quickstart, basic `.gitignore`, and README setup |
+| Day 2 | day2_cli_tool.py | Command-line tool using `argparse` to demonstrate CLI arguments and loops |
+| Day 3 | day3_file_explorer.py | Explore directories and list files; optional detailed info (size, last modified) |
+| Day 4 | day4_sysinfo.py | Collect system info: OS, hostname, IP addresses, current user, CPU, and memory |
+| Day 5 | (Optional) | Small security-focused scripts (practice exercises) |
+| Day 6 | day6_sysinfo_logging.py | Added robust exception handling and logging to `sysinfo.py` for production readiness |
+
+---
+
+## How to Run Scripts
+
+### CLI Tool (Day 2)
+```bash
+python day2_cli_tool.py --name Satyajeet --count 3
