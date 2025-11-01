@@ -1,0 +1,6 @@
+2025-10-31 11:27:36,935 - INFO - Socket created for google.com:80
+2025-10-31 11:27:36,935 - INFO - Timeout set to 5 seconds
+2025-10-31 11:27:37,011 - INFO - Connected to google.com:80
+2025-10-31 11:27:37,011 - INFO - Sent message: GET / HTTP/1.1\r\nHost: google.com\r\n\r\n
+2025-10-31 11:27:42,012 - ERROR - Connection timed out.
+2025-10-31 11:27:42,012 - INFO - Connection closed.
